@@ -4,17 +4,17 @@
 import asyncio
 import aiohttp
 import time
+import os
 
 
-
-URL = "http://127.0.0.1:8000/{}"
+URL = "http://localhost:8000/{}"
 endpoint = ["vault1"]
 
 
 results = []
 start = time.time()
 
-endpoints = endpoint
+endpoints = endpoint*100
 
 
 
@@ -44,15 +44,22 @@ async def get_req():
 
 
 
-asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-asyncio.run(get_req())
+if os.name == 'nt':
+	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+	asyncio.run(get_req())
 
+	end = time.time()
+	total_time = end - start
 
+	print("It took {} seconds to make {} API calls".format(total_time, len(endpoints)))
+	
 
+else:
 
+	asyncio.run(get_req())
 
+	end = time.time()
+	total_time = end - start
 
-end = time.time()
-total_time = end - start
+	print("It took {} seconds to make {} API calls".format(total_time, len(endpoints)))
 
-print("It took {} seconds to make {} API calls".format(total_time, len(endpoints)))
