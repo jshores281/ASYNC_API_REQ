@@ -14,7 +14,7 @@
 
 
 
-#### The async API requests are tested on:
+#### The async API requests are tested in:
 - VMware 15 Ubuntu 22.04 image
 - localhost server (gunicorn - defaults)
 - MySQL database (1 table, 50 inserts, 7 columns)
