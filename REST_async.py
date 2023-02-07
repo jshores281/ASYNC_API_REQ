@@ -14,7 +14,7 @@ endpoint = ["vault1"]
 results = []
 start = time.time()
 
-endpoints = endpoint*1
+endpoints = endpoint*10
 
 
 
@@ -61,5 +61,5 @@ else:
 	end = time.time()
 	total_time = end - start
 
-	print("It took {} seconds to make {} API calls".format(total_time, len(endpoints)))
+	print("\n"*2, "It took {} seconds to make {} API calls".format(total_time, len(endpoints)),"\n"*2,)
 
