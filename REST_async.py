@@ -14,7 +14,7 @@ endpoint = ["vault1"]
 results = []
 start = time.time()
 
-endpoints = endpoint*100
+endpoints = endpoint*1
 
 
 
