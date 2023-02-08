@@ -44,7 +44,7 @@
 ![norm_htop](https://user-images.githubusercontent.com/52839097/217370999-c3f275c5-4d8a-45fa-8787-77ea1aa1f050.PNG)
 
 
-#### Highest test (10,000 requests):
+#### Highest test (100,000 requests):
 ![100000_hi_htop2](https://user-images.githubusercontent.com/52839097/217371784-df3f803a-1d90-4859-83aa-f3ce04230a16.PNG)
 
 
