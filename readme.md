@@ -11,6 +11,10 @@
 - VMware 15 Ubuntu 22.04 image
 - localhost server (gunicorn - defaults)
 - MySQL database (1 table, 50 inserts, 7 columns)
+- Python 3.8.10
+    - Asyncio
+    - aiohttp
+    - time
 
 <br>
 
