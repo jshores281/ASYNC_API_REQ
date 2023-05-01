@@ -25,7 +25,7 @@
 
 1. 10 API requests
 
-![Alt text](tests/10test.PNG)
+![Alt text](tests/results_tests/10test.PNG)
 
 2. 100 API requests
 
